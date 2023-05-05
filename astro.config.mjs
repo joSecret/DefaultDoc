@@ -1,12 +1,12 @@
 import { defineConfig } from 'astro/config';
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
 import { SITE_URL } from './src/site_config';
 
 // https://astro.build/config
 export default defineConfig({
   site: SITE_URL,
-  integrations: [tailwind(), sitemap()],
+  base: '/DefaultDoc',
+  integrations: [sitemap()],
   vite: {
     plugins: [rawFonts(['.ttf'])],
     optimizeDeps: { exclude: ['@resvg/resvg-js'] }
