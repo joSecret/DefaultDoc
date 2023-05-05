@@ -4,6 +4,7 @@
 export const SITE_TITLE = "Manual Theme"
 export const SITE_DESCRIPTION = "A documentation template for Astro"
 export const SITE_URL = "https://josecret.github.io"
+export const SITE_BASE = "/DefaultDoc"
 export const SITE_DEFAULT_OG_IMAGE = "/assets/og-image.png"
 
 // Docs Sidebar
@@ -11,13 +12,13 @@ export const SITE_DEFAULT_OG_IMAGE = "/assets/og-image.png"
 // The path should match the folder name in src/content/docs/
 export const SIDEBAR_ITEMS = {
   "Get Started": [
-    "/docs/get-started/introduction",
-    "/docs/get-started/installation",
+    "/DefaultDoc/docs/get-started/introduction",
+    "/DefaultDoc/docs/get-started/installation",
   ],
   "Tutorials": [
-    "/docs/tutorials/build-x",
+    "/DefaultDoc/docs/tutorials/build-x",
   ],
   "Guides": [
-    "/docs/guides/migrate-from-z",
+    "/DefaultDoc/docs/guides/migrate-from-z",
   ]
 }
